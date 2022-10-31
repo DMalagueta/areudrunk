@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Are U Drunk</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="main-title">Are U Drunk?</h1>
+        <div class="main-container">
+            <div class="main-header"><label for="numberDrings">Quantas bebidas já bebeste?</label><input id="numberDrinks" type="number" value="0" min="0" oninput="this.value = Math.abs(this.value)"></div>
+            <div class="main-body">
+                <button id="btn-result"></button>
+                
+                <div class="main-result">
+                    <h4>Veredicto</h4>
+                    <p>Clica no botão para saberes o resultado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

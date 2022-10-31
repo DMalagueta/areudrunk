@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("bg.jpeg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap:30px
+}
+
+.main-title{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(174, 173, 172, 0.836);
+  border-radius: 10px;
+  padding: 20px;
+  color:white;
+  min-width: 330px;
+  min-height:300px;
+  border:1px solid white;
+}
+
+.main-header input{
+    max-width: 30px;
+    min-height:30px;
+    border-radius:5px;
+    margin: 5px;
+    text-align: center;
+    border:2px solid rgb(143, 5, 5);
+    background-color: rgba(138, 19, 19, 0.642);
+    color:white;
+}
+.main-body{
+    text-align: center;
+    width: 100%;
+}
+
+.main-body button{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background:red;
+    border-radius: 50%;
+    border:3px solid rgb(84, 21, 21);
+}
+
+.main-body button:active{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    background:red;
+    border-radius: 50%;
+    border:3px solid transparent;
+}
+
+.main-result{
+    margin-top: 30px;
+    font-weight: bold;
+    color:red;
+}
+
+.main-result h4{
+    color:white;
+    letter-spacing: 2px;
+}
+
+.main-result p{
+    margin-top: 10px;
+}
